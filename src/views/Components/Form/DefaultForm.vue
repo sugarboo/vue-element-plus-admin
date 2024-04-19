@@ -1052,6 +1052,7 @@ const schema = reactive<FormSchema[]>([
       slots: {
         default: (options: RadioOption[]) => {
           return options?.map((v) => {
+            // @ts-ignore: probably the upstream lib typing problem
             return <ElRadio label={v.label + `(${v.value})`} value={v.value} />
           })
         }
@@ -1093,6 +1094,7 @@ const schema = reactive<FormSchema[]>([
       slots: {
         default: (options: RadioOption[]) => {
           return options?.map((v) => {
+            // @ts-ignore: probably the upstream lib typing problem
             return <ElRadioButton label={v.label + `(${v.value})`} value={v.value} />
           })
         }
@@ -1149,6 +1151,7 @@ const schema = reactive<FormSchema[]>([
       slots: {
         default: (options: CheckboxOption[]) => {
           return options?.map((v) => {
+            // @ts-ignore: probably the upstream lib typing problem
             return <ElCheckbox label={v.label + `(${v.value})`} value={v.value} />
           })
         }
@@ -1202,6 +1205,7 @@ const schema = reactive<FormSchema[]>([
       slots: {
         default: (options: CheckboxOption[]) => {
           return options?.map((v) => {
+            // @ts-ignore: probably the upstream lib typing problem
             return <ElCheckboxButton label={v.label + `(${v.value})`} value={v.value} />
           })
         }

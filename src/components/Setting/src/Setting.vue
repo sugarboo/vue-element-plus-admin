@@ -12,12 +12,17 @@ import LayoutRadioPicker from './components/LayoutRadioPicker.vue'
 import { useStorage } from '@/hooks/web/useStorage'
 import { useClipboard } from '@vueuse/core'
 import { useDesign } from '@/hooks/web/useDesign'
+import { propTypes } from '@/utils/propTypes'
 
 const { clear: storageClear } = useStorage('localStorage')
 
 const { getPrefixCls } = useDesign()
 
 const prefixCls = getPrefixCls('setting')
+
+defineProps({
+  color: propTypes.string.def('')
+})
 
 const appStore = useAppStore()
 
@@ -158,10 +163,10 @@ const themeChange = () => {
 <template>
   <div
     :class="prefixCls"
-    class="fixed top-[45%] right-0 w-40px h-40px flex items-center justify-center bg-[var(--el-color-primary)] cursor-pointer z-10"
+    class="w-18px h-40px flex items-center justify-center cursor-pointer z-10 custom-hover"
     @click="drawer = true"
   >
-    <Icon icon="ant-design:setting-outlined" color="#fff" />
+    <Icon icon="ant-design:setting-outlined" :color="color" />
   </div>
 
   <ElDrawer v-model="drawer" direction="rtl" size="350px" :z-index="4000">
