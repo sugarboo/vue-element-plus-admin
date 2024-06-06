@@ -49,13 +49,13 @@ watch(
       }"
       @click="colorVal = item"
     >
-      <Icon v-if="colorVal === item" color="#fff" icon="ep:check" :size="16" />
+      <Icon v-if="colorVal === item" color="#fff" icon="vi-ep:check" :size="16" />
     </span>
   </div>
 </template>
 
 <style lang="less" scoped>
-@prefix-cls: ~'@{namespace}-color-radio-picker';
+@prefix-cls: ~'@{adminNamespace}-color-radio-picker';
 
 .@{prefix-cls} {
   .is-active {

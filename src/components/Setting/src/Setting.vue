@@ -166,7 +166,7 @@ const themeChange = () => {
     class="w-18px h-40px flex items-center justify-center cursor-pointer z-10 custom-hover"
     @click="drawer = true"
   >
-    <Icon icon="ant-design:setting-outlined" :color="color" />
+    <Icon icon="vi-ant-design:setting-outlined" :color="color" />
   </div>
 
   <ElDrawer v-model="drawer" direction="rtl" size="350px" :z-index="4000">
@@ -254,7 +254,7 @@ const themeChange = () => {
 </template>
 
 <style lang="less" scoped>
-@prefix-cls: ~'@{namespace}-setting';
+@prefix-cls: ~'@{adminNamespace}-setting';
 
 .@{prefix-cls} {
   border-radius: 6px 0 0 6px;

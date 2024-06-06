@@ -75,7 +75,7 @@ function handleShowForm(show = false) {
       @click="handleShowForm(false)"
       v-show="showDate"
     >
-      <Icon icon="ep:lock" />
+      <Icon icon="vi-ep:lock" />
       <span>{{ t('lock.unlock') }}</span>
     </div>
 
@@ -152,7 +152,7 @@ function handleShowForm(show = false) {
 </template>
 
 <style lang="less" scoped>
-@prefix-cls: ~'@{namespace}-lock-page';
+@prefix-cls: ~'@{adminNamespace}-lock-page';
 
 // Small screen / tablet
 @screen-sm: 576px;

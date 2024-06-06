@@ -12,7 +12,7 @@ const adminList = [
     name: 'Dashboard',
     meta: {
       title: 'router.dashboard',
-      icon: 'ant-design:dashboard-filled',
+      icon: 'vi-ant-design:dashboard-filled',
       alwaysShow: true
     },
     children: [
@@ -49,7 +49,7 @@ const adminList = [
         name: 'DocumentLink',
         meta: {
           title: 'router.document',
-          icon: 'clarity:document-solid'
+          icon: 'vi-clarity:document-solid'
         }
       }
     ]
@@ -66,7 +66,7 @@ const adminList = [
         name: 'GuideDemo',
         meta: {
           title: 'router.guide',
-          icon: 'cib:telegram-plane'
+          icon: 'vi-cib:telegram-plane'
         }
       }
     ]
@@ -78,7 +78,7 @@ const adminList = [
     name: 'ComponentsDemo',
     meta: {
       title: 'router.component',
-      icon: 'bx:bxs-component',
+      icon: 'vi-bx:bxs-component',
       alwaysShow: true
     },
     children: [
@@ -201,6 +201,14 @@ const adminList = [
             name: 'JsonEditor',
             meta: {
               title: 'router.jsonEditor'
+            }
+          },
+          {
+            path: 'code-editor',
+            component: 'views/Components/Editor/CodeEditor',
+            name: 'CodeEditor',
+            meta: {
+              title: 'router.codeEditor'
             }
           }
         ]
@@ -350,7 +358,7 @@ const adminList = [
     name: 'Function',
     meta: {
       title: 'router.function',
-      icon: 'ri:function-fill',
+      icon: 'vi-ri:function-fill',
       alwaysShow: true
     },
     children: [
@@ -398,7 +406,7 @@ const adminList = [
     name: 'Hooks',
     meta: {
       title: 'hooks',
-      icon: 'ic:outline-webhook',
+      icon: 'vi-ic:outline-webhook',
       alwaysShow: true
     },
     children: [
@@ -459,7 +467,7 @@ const adminList = [
     name: 'Level',
     meta: {
       title: 'router.level',
-      icon: 'carbon:skill-level-advanced'
+      icon: 'vi-carbon:skill-level-advanced'
     },
     children: [
       {
@@ -518,7 +526,7 @@ const adminList = [
     name: 'Example',
     meta: {
       title: 'router.example',
-      icon: 'ep:management',
+      icon: 'vi-ep:management',
       alwaysShow: true
     },
     children: [
@@ -586,7 +594,7 @@ const adminList = [
     name: 'Error',
     meta: {
       title: 'router.errorPage',
-      icon: 'ci:error',
+      icon: 'vi-ci:error',
       alwaysShow: true
     },
     children: [
@@ -623,7 +631,7 @@ const adminList = [
     name: 'Authorization',
     meta: {
       title: 'router.authorization',
-      icon: 'eos-icons:role-binding',
+      icon: 'vi-eos-icons:role-binding',
       alwaysShow: true
     },
     children: [
@@ -687,6 +695,7 @@ const testList: string[] = [
   '/components/editor-demo',
   '/components/editor-demo/editor',
   '/components/editor-demo/json-editor',
+  '/components/editor-demo/code-editor',
   '/components/search',
   '/components/descriptions',
   '/components/image-viewer',
@@ -753,7 +762,7 @@ const menus = [
       id: 1,
       meta: {
         title: '首页',
-        icon: 'ant-design:dashboard-filled',
+        icon: 'vi-ant-design:dashboard-filled',
         alwaysShow: true
       },
       children: [
@@ -786,7 +795,7 @@ const menus = [
       component: '#',
       meta: {
         title: '文档',
-        icon: 'clarity:document-solid'
+        icon: 'vi-clarity:document-solid'
       },
       name: 'ExternalLink',
       status: Mock.Random.integer(0, 1),
@@ -812,7 +821,7 @@ const menus = [
       id: 6,
       meta: {
         title: '菜单',
-        icon: 'carbon:skill-level-advanced'
+        icon: 'vi-carbon:skill-level-advanced'
       },
       children: [
         {
@@ -889,7 +898,7 @@ const menus = [
       id: 12,
       meta: {
         title: '综合示例',
-        icon: 'ep:management',
+        icon: 'vi-ep:management',
         alwaysShow: true
       },
       children: [
@@ -981,7 +990,7 @@ const menus = [
       id: 1,
       meta: {
         title: '首页',
-        icon: 'ant-design:dashboard-filled',
+        icon: 'vi-ant-design:dashboard-filled',
         alwaysShow: true
       },
       children: [
@@ -1016,7 +1025,7 @@ const menus = [
       component: '#',
       meta: {
         title: '文档',
-        icon: 'clarity:document-solid'
+        icon: 'vi-clarity:document-solid'
       },
       name: 'ExternalLink',
       status: Mock.Random.integer(0, 1),
@@ -1042,7 +1051,7 @@ const menus = [
       id: 6,
       meta: {
         title: '菜单',
-        icon: 'carbon:skill-level-advanced'
+        icon: 'vi-carbon:skill-level-advanced'
       },
       children: [
         {
@@ -1121,7 +1130,7 @@ const menus = [
       id: 12,
       meta: {
         title: '综合示例',
-        icon: 'ep:management',
+        icon: 'vi-ep:management',
         alwaysShow: true
       },
       children: [

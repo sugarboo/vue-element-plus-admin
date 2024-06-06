@@ -158,7 +158,8 @@ export default defineComponent({
         {
           field: item.field,
           path:
-            item.component === ComponentNameEnum.TREE_SELECT
+            item.component === ComponentNameEnum.TREE_SELECT ||
+            item.component === ComponentNameEnum.TRANSFER
               ? 'componentProps.data'
               : 'componentProps.options',
           value: options
@@ -419,7 +420,7 @@ export default defineComponent({
 </script>
 
 <style lang="less" scoped>
-.@{elNamespace}-form.@{namespace}-form .@{elNamespace}-row {
+.@{elNamespace}-form.@{adminNamespace}-form .@{elNamespace}-row {
   margin-right: 0 !important;
   margin-left: 0 !important;
 }

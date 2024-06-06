@@ -97,12 +97,14 @@ export default defineComponent({
                   {props.title}
                   {props.message ? (
                     <ElTooltip content={props.message} placement="right">
-                      <Icon icon="bi:question-circle-fill" class="ml-5px" size={14} />
+                      <Icon icon="vi-bi:question-circle-fill" class="ml-5px" size={14} />
                     </ElTooltip>
                   ) : null}
                 </div>
               </div>
-              {props.collapse ? <Icon icon={show.value ? 'ep:arrow-down' : 'ep:arrow-up'} /> : null}
+              {props.collapse ? (
+                <Icon icon={show.value ? 'vi-ep:arrow-down' : 'vi-ep:arrow-up'} />
+              ) : null}
             </div>
           ) : null}
 
@@ -163,7 +165,7 @@ export default defineComponent({
 </script>
 
 <style lang="less" scoped>
-@prefix-cls: ~'@{namespace}-descriptions';
+@prefix-cls: ~'@{adminNamespace}-descriptions';
 
 :deep(.@{elNamespace}-descriptions__header) {
   display: none !important;
